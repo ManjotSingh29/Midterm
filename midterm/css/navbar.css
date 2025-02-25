@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.nav-left a {
+  margin: 0 15px;
+  color: red;
+  text-decoration: none;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
+}
+
+.nav-right button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-right button:hover {
+  background-color: #444;
+}
+
+#contactBtn {
+  color: white;
+}

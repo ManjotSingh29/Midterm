@@ -1,0 +1,126 @@
+body {
+  background-color: #001f3d;
+  color: white;
+  margin: 0;
+  padding-bottom: 40px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+  background-color: #001f3d;
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 40px);
+}
+
+.row {
+  display: contents;
+}
+
+.col {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left.message {
+  grid-column: span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.right.input {
+  grid-column: span 2;
+}
+
+input {
+  width: 100%;
+  font-size: 2rem;
+  padding: 10px;
+  height: 100%;
+  overflow: hidden;
+  resize: none;
+  appearance: none;
+  background-color: #001f3d;
+  color: white;
+  border: 1px solid #fff;
+}
+
+input[type="number"]::-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #555; /* Grey background for buttons */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #888; /* Lighter grey when hovered */
+}
+
+.screen {
+  background-color: #332703;
+  color: white;
+  font-size: 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left p {
+  color: blue;
+}
+
+footer {
+  background-color: #444;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+}
